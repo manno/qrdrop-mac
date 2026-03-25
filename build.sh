@@ -23,6 +23,7 @@ swiftc \
   -framework UniformTypeIdentifiers
 
 cp "$ROOT_DIR/Resources/Info.plist" "$CONTENTS_DIR/Info.plist"
+cp "$ROOT_DIR/Resources/AppIcon.icns" "$RESOURCES_DIR/AppIcon.icns"
 chmod +x "$MACOS_DIR/$APP_NAME"
 
 echo "Built $APP_DIR"
