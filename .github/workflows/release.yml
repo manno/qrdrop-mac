@@ -20,7 +20,7 @@ jobs:
       - name: Zip app bundle
         run: |
           cd dist
-          zip -r QRDrop.zip QRDrop.app
+          ditto -c -k --sequesterRsrc --keepParent QRDrop.app QRDrop.zip
 
       - name: Create GitHub release
         env:
